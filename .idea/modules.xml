@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mine.iml" filepath="$PROJECT_DIR$/mine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/biz/mine-biz.iml" filepath="$PROJECT_DIR$/biz/mine-biz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/mine-core.iml" filepath="$PROJECT_DIR$/core/mine-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mysql/mine-mysql.iml" filepath="$PROJECT_DIR$/mysql/mine-mysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/mine-web.iml" filepath="$PROJECT_DIR$/web/mine-web.iml" />
+    </modules>
+  </component>
+</project>

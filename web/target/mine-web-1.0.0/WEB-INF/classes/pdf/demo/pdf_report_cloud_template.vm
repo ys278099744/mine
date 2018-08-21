@@ -1,0 +1,638 @@
+#macro(showPolicy $policyList)
+<table class="table2">
+    <tr>
+        <th class="row110">风险群体编号</th>
+        <th class="row360">己方节点</th>
+        <th class="row360">风险原因</th>
+        <th class="row230">建议</th>
+    </tr>
+    #set($rowIndex = 0)
+    #foreach($group in $policyList)
+        #set($index = 0)
+        #foreach($policy in $group.reportPolicies)
+            <tr #if($index + 1 == $group.reportPolicies.size())class="borderBottom"#end>
+                #if($index == 0)
+                    <td rowspan="$group.reportPolicies.size()" class="rowspan">$group.groupId</td>
+                #end
+                <td #if($rowIndex%2==1)class="bg"#end><span
+                        class="#if($policy.isBlack == 1)black#end #if($policy.isCore == 1)coreSelfNode#end">$!policy.node</span>
+                </td>
+                <td #if($rowIndex%2==1)class="bg"#end>
+                    #foreach($reason in $policy.fraudReason)
+                        $!reason<br/>
+                    #end
+                </td>
+                <td #if($rowIndex%2==1)class="bg"#end>
+                    <span
+                        #if($policy.policy.startsWith("逾期风险高") ||$policy.policy.startsWith("欺诈风险高"))class="review"
+                        #elseif($policy.policy.startsWith("逾期风险")||$policy.policy.startsWith(
+                            "欺诈风险"))class="reject" #end>$!policy.policy</span>
+                </td>
+            </tr>
+            #set($index = $index + 1)
+            #set($rowIndex = $rowIndex + 1)
+        #end
+    #end
+</table>
+#end
+#macro(showFeature $feature)
+<h2 class="title3">[风险群体<span class="coreSelfNode">$!feature.groupId</span>] 信息详情</h2>
+<table>
+    <tr>
+        <th class="row170">风险群体的节点个数</th>
+        <td class="row360">$!feature.allNodeCnt</td>
+        <th class="row160">非己方节点个数</th>
+        <td class="row360">$!feature.noselfNodeCnt</td>
+    </tr>
+    <tr>
+        <th class="row170">风险群体的节点分布</th>
+        <td class="row360">
+            #foreach($item in $feature.nodeTypeDist)
+                $!item<br/>
+            #end
+        </td>
+        <th class="row160">非己方节点分布</th>
+        <td class="row360">
+            #if($feature.noselfNodeTypeDist && $feature.noselfNodeTypeDist.size()>0)
+                #foreach($item in $feature.noselfNodeTypeDist)
+                    $!item<br/>
+                #end
+            #else -
+            #end
+        </td>
+    </tr>
+    <tr>
+        <th class="row170">总事件个数</th>
+        <td class="row360">$!feature.totalEventCnt</td>
+        <th class="row160">拒绝和审核事件占比</th>
+        <td class="row360">${number.format($number_fmt, ${feature.rejectReviewRate})}</td>
+    </tr>
+    <tr>
+        <th class="row170">己方节点个数</th>
+        <td class="row360">$!feature.selfNodeCnt</td>
+        <th class="row160">跨平台个数</th>
+        <td class="row360">$!feature.partnerCnt</td>
+    </tr>
+    <tr>
+        <th class="row170">核心节点个数</th>
+        <td class="row360">$!{feature.coreNodeCnt}</td>
+        <th class="row160">事件类型个数</th>
+        <td class="row360">$!feature.eventCnt</td>
+    </tr>
+    <tr>
+        <th class="row170">己方核心节点</th>
+        <td class="row360">
+            #if($feature.subFeatures && $!{feature.subFeatures.size()} > 1)
+                #set($find = false)
+                #foreach($subFeature in ${feature.subFeatures})
+                    #if($subFeature.coreSelfNode && $subFeature.coreSelfNode.size()>0)
+                        #foreach($item in $subFeature.coreSelfNode)
+                            $!item<br/>
+                        #end
+                        #set($find = true)
+                    #end
+                #end
+                #if(!$find)-
+                #end
+            #else
+                #if($feature.coreSelfNode && $feature.coreSelfNode.size()>0)
+                    #foreach($item in $feature.coreSelfNode)
+                        $!item<br/>
+                    #end
+                #else -
+                #end
+            #end
+        </td>
+        <th class="row160">命中TOP5事件分布</th>
+        <td class="row360">
+            #foreach($item in $feature.eventTypeDist)
+                $!item
+                #if($velocityCount == 5)
+                    #break
+                #end
+                <br/>
+            #end
+        </td>
+    </tr>
+    <tr>
+        <th class="row170">风险名单个数</th>
+        <td class="row360">$!feature.blackNodeCnt</td>
+        <th class="row160">关注名单个数</th>
+        <td class="row360">$!feature.greyNodeCnt</td>
+    </tr>
+    <tr>
+        <th class="row170">风险名单占比</th>
+        <td class="row360">${number.format($number_fmt, ${feature.blackNodeRate})}</td>
+        <th class="row160">关注名单占比</th>
+        <td class="row360">${number.format($number_fmt, ${feature.greyNodeRate})}</td>
+    </tr>
+    <tr>
+        <th class="row170">风险名单分布</th>
+        <td class="row360">
+            #if($feature.fraudDist && $feature.fraudDist.size()>0)
+                #foreach($item in $feature.fraudDist)
+                    $!item<br/>
+                #end
+            #else -
+            #end
+        </td>
+        <th class="row160">关联事件的风险类型分布</th>
+        <td class="row360">
+            #if($feature.riskTypeDist && $feature.riskTypeDist.size()>0)
+                #foreach($riskType in $!{feature.riskTypeDist})
+                    $!riskType<br/>
+                #end
+            #else -
+            #end
+        </td>
+    </tr>
+    <tr>
+        <th class="row170">群体关联事件最早时间</th>
+        <td class="row360">
+            #if($commonUtil.formatDate($!feature.firstActivityTime))
+                $!commonUtil.formatDate($!feature.firstActivityTime)
+            #else -
+            #end
+        </td>
+        <th class="row160">群体关联事件最晚时间</th>
+        <td class="row360">
+            #if($commonUtil.formatDate($!feature.lastActivityTime))
+                $!commonUtil.formatDate($!feature.lastActivityTime)
+            #else -
+            #end
+        </td>
+    </tr>
+</table>
+#end
+#macro(showFeatures $features $image_base64)
+    #set($key = 0)
+    #foreach($feature in $features)
+    <h2 class="title2">风险群体<span class="coreSelfNode">$!feature.groupId</span></h2>
+    <div class="group">
+        #showFeature($feature)
+        #set( $image = $image_base64.get($key) )
+        <h2 class="title3">[风险群体<span class="coreSelfNode">$!feature.groupId</span>] 分布图</h2>
+        #set( $marginLeft = (850 - $image.width) / 2)
+        <div class="border">
+            <div class="demo">
+                #if($feature.subFeatures && $!{feature.subFeatures.size()} > 1)
+                    <div>
+                        <span class="remark">不同颜色区域分别代表不同子风险群体</span>
+                    </div>
+                #end
+                <div>
+                    <span class="text">风险名单</span>
+                    <span class="circle circle-black"></span>
+                </div>
+                <div>
+                    <span class="text">己方节点</span>
+                    <span class="circle circle-self" #if($feature.subFeatures) style="background: #83dcec" #end></span>
+                </div>
+                <div>
+                    <span class="text">非己方节点#if($feature.subFeatures && $!{feature.subFeatures.size()} > 1)
+                        (半透明)#end</span>
+                    <span class="circle circle-noself" #if($feature.subFeatures)
+                          style="background: #daf4f9" #end></span>
+                </div>
+                <div>
+                    <span class="text">关联事件越多，边越粗</span>
+                    <span class="" style="
+                        width: 20px;
+                        height: 12px;
+                        display: inline-block;
+                        vertical-align: bottom;
+                        border-bottom: 3px solid #666;
+                    "/>
+                </div>
+            </div>
+            $!{image.base}
+        </div>
+        #set ( $key = $key + 1 )
+        #foreach($subFeature in $feature.subFeatures)
+            #showFeature($subFeature)
+        #end
+    </div>
+    #end
+#end
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+##    <meta charset="utf-8"/>
+    <style type="text/css">
+        html, body, div, p, ul, li, table {
+            margin: 0;
+            padding: 0;
+        }
+
+        .head {
+            font-size: 12px;
+            overflow: hidden;
+            padding: 0 0 3px;
+            color: #666;
+            border-bottom: 4px solid #bbb;
+        }
+
+        * { /*font-size: 12px/1.5 'Arial Unicode MS';*/
+            font-size-adjust: none;
+            font-stretch: normal;
+        }
+
+        body {
+            font-family: "Microsoft YaHei";
+        }
+
+        .reject {
+            color: #ff6c5c;
+            /*font-weight: bold;*/
+        }
+
+        .review {
+            color: #ffcc50;
+        }
+
+        .head h1 {
+            color: #5c6b77;
+            padding-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .head .label {
+            color: #999;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .content {
+        }
+
+        .note {
+            float: left;
+            margin-top: -85px;
+            font-size: 12px;
+            color: #999;
+        }
+
+        .title {
+            margin: 90px 0 17px;
+            font-size: 18px;
+            padding-left: 10px;
+            color: #fff;
+            line-height: 50px;
+            background-color: #5c6b77;
+        }
+
+        .title2 {
+            font-size: 18px;
+            color: #5c6b77;
+            vertical-align: middle;
+            border-left: 4px solid #aeb5bb;
+            padding-left: 15px;
+            margin: 20px 0 10px;
+        }
+
+        .title3 {
+            font-size: 18px;
+            color: #5c6b77;
+            line-height: 18px;
+            font-weight: lighter;
+            margin: 10px 10px 15px;
+        }
+
+        .group {
+            border: 8px solid #aeb5bb;
+            padding: 10px;
+        }
+
+        .group table:last-child {
+            margin-bottom: 10px;
+        }
+
+        table {
+            border-top: 1px solid #ccc;
+            font-size: 12px;
+            border-collapse: 0;
+            border-spacing: 0px;
+            border-right: 1px solid #ccc;
+            color: #4b4b4b;
+        }
+
+        table th {
+            color: #5c6b77;
+            font-weight: normal;
+            font-size: 14px;
+            background-color: #e8ecef;
+        }
+
+        table td {
+            color: #666;
+            padding-left: 20px;
+        }
+
+        table td, table th {
+            text-align: left;
+            padding: 10px;
+            line-height: 19px;
+            vertical-align: middle;
+            border-left: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .remark {
+            color: #5c6b77;
+            font-size: 14px;
+        }
+
+        .remark ul {
+            display: inline-block;
+            margin-left: 20px;
+            list-style: none;
+        }
+
+        .border {
+            border: 1px solid #ddd;
+            padding: 0 40px 50px;
+            position: relative;
+        }
+
+        .border .title {
+            color: #2ea5ff;
+        }
+
+        .border h3 {
+            font-size: 18px;
+            padding: 26px 0 15px;
+            color: #4b4b4b;
+        }
+
+        .border .border {
+            padding: 0;
+        }
+
+        .demo {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        .demo .text {
+            display: inline-block;
+            text-align: right;
+            width: 120px;
+            font-size: 12px;
+            color: #666;
+            margin-right: 3px;
+            vertical-align: top;
+        }
+
+        .demo .remark {
+            width: auto;
+            display: inline-block;
+            font-size: 12px;
+            color: #666;
+            margin-left: -85px;
+        }
+
+        .demo .circle {
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            border-radius: 12px;
+            font-size: 0;
+            vertical-align: bottom;
+        }
+
+        .demo .circle-black {
+            border: 2px solid #dd1818;
+            width: 8px;
+            height: 8px;
+        }
+
+        .demo .circle-self {
+            background: #ffd388
+        }
+
+        .demo .circle-noself {
+            background: #b0e1fa
+        }
+
+        .table2 {
+            margin-top: 20px;
+            border-color: #aeb5bb;
+        }
+
+        .table2 th:first-child {
+            border-color: #aeb5bb;
+        }
+
+        .table2 td.rowspan {
+            border-bottom: 2px solid #aeb5bb;
+            border-left: 2px solid #aeb5bb;
+            text-align: center;
+        }
+
+        /*.table2 tr:nth-child(odd) td:not([rowspan]) {*/
+        /*background-color: #fcfcfc;*/
+        /*}*/
+
+        .table2 .bg {
+            background-color: #fcfcfc;
+        }
+
+        .borderBottom td {
+            border-bottom: 2px solid #aeb5bb;
+        }
+
+        .table2, .table2 th {
+            border-width: 2px;
+            border-bottom-color: #aeb5bb;
+        }
+
+        .table2 td, .table2 th {
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        .padding10 {
+            padding: 10px 0;
+        }
+
+        .floatLeft {
+            float: left;
+        }
+
+        .row110 {
+            width: 110px;
+        }
+
+        .row160 {
+            width: 160px;
+        }
+
+        .row170 {
+            width: 170px;
+        }
+
+        .row230 {
+            width: 230px;
+        }
+
+        .row350 {
+            width: 350px;
+        }
+
+        .row360 {
+            width: 360px;
+        }
+
+        .row890 {
+            width: 890px;
+        }
+
+        .coreSelfNode {
+            font-weight: bold
+        }
+
+        .black {
+            color: #d0021b;
+        }
+
+        svg {
+            display: block;
+        }
+
+        <!--
+        @page :first {
+            margin-top: 25px;
+        }
+
+        @page {
+            size: 11in 200in;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        -->
+    </style>
+</head>
+
+<body>
+<div>
+    <div class="head">
+    <span style="float: right;margin-top: 10px;">
+        <span class="label">报告编号：</span>
+        <span style="margin-right:15px;color: #000;">$!{report_id}</span>
+        <span class="label">报告时间：</span>
+        <span style="color: #000;">$!{report_time}</span>
+    </span>
+        <h1 class="fl">
+            复杂网络风险群体分析报告
+        </h1>
+    </div>
+
+    <div class="content">
+        <span class="note">注：<br/>
+1. 本报告查询的合作方：$!{report.partnerName}；<br/>
+2. 本报告仅针对用户本次批量上传的数据，进行全局关联；<br/>
+3. 由于篇幅的限制，本报告仅展示前20个风险群体详情，其他更多风险群体信息，请到风险群体明细（excel）中查看；<br/>
+4. 若风险群体不满20个，则显示全部。</span>
+        <h2 class="title">本次检测结果</h2>
+        <h2 class="title2">输入数据</h2>
+        <table>
+        <tr>
+            <th class="row170">总输入数据量</th>
+            <td class="row360">$!report.input_count</td>
+            #set($index = 0)
+            #foreach($input in $report.input_stat)
+                #if($index%2 == 1)
+                <tr>
+                #end
+                #foreach($key in $input.keySet())
+                    <th class="row170">$!key个数</th>
+                    <td class="row360">$input.get($key)</td>
+                    #set($index = $index + 1)
+                    #if($index%2 == 1)
+                    </tr>
+                    #end
+                #end
+            #end
+            #if($index%2==0)
+                <th class="row170"></th>
+                <td class="row360"></td>
+                </tr>
+            #end
+        </table>
+        <h2 class="title2">输出数据----风险群体分析概述</h2>
+        <table>
+            #set($tNum = 0)
+            #set($tNodeNum = 0)
+            #set($sNodeNum = 0)
+            #set($sCoreNodeNum = 0)
+            #set($hasSubGropupIds = [])
+            #foreach($feature in $!{report.allFeatures})
+                #if($feature.groupId.contains("_"))
+                    #set($result=$hasSubGropupIds.add(${feature.groupId.split("_").get(0)}))
+                #end
+            #end
+
+            #foreach($feature in $!{report.allFeatures})
+                #if(!$hasSubGropupIds.contains($feature.groupId))
+                    #set($tNum = $tNum + 1)
+                    #set($tNodeNum = $tNodeNum + $feature.allNodeCnt)
+                    #set($sNodeNum = $sNodeNum + $feature.selfNodeCnt)
+                    #if(${feature.coreSelfNode}&&${feature.coreSelfNode}!="")
+                        #set($sCoreNodeNum = $sCoreNodeNum + ${feature.coreSelfNode.split(";").size()})
+                    #end
+                #end
+            #end
+
+            <tr>
+                <th class="row170">风险群体个数</th>
+                <td class="row360">$!tNum</td>
+                <th class="row170">风险群体节点数</th>
+                <td class="row360">$!tNodeNum</td>
+            </tr>
+            <tr>
+                <th class="row170">己方节点个数</th>
+                <td class="row360">$!sNodeNum</td>
+                <th class="row170">己方核心节点个数</th>
+                <td class="row360">$!sCoreNodeNum</td>
+            </tr>
+            <tr>
+                <th class="row170">本次检测关联事件类型</th>
+                <td class="row890" colspan="3">
+                    #if($report.eventNames)
+                        $!report.eventNames
+                    #else -
+                    #end
+                </td>
+            </tr>
+        </table>
+        <h2 class="title">策略及建议</h2>
+        <div class="remark">
+            <span class="floatLeft">备注</span>
+            <ul>
+                <li>1. 只展示本次传入数据中有逾期/欺诈风险的数据，无风险数据不展示；</li>
+                <li>2. 由于篇幅限制，本部分只展示TOP20风险群体的风险数据（不满20个显示全部），其他数据请到群体数据明细数据查看；</li>
+                <li class="padding10"><span class="floatLeft">3. 图例：</span>
+                    <ul>
+                        <li> (1) 黑色粗体表示"核心节点"，如：<span class="coreSelfNode">13000000000</span>；</li>
+                        <li class="padding10"> (2) 红色表示"命中风险名单库"，如：<span class="black">13000000000</span>；</li>
+                        <li> (3) 红色粗体表示"既是核心节点，又命中风险名单"，如：<span class="coreSelfNode black">13000000000</span>；</li>
+                    </ul>
+                </li>
+                <li>4. “可视化工作台”为复杂网络图形化工具，可针对单条数据进行包含“事件”信息的动态分析调查，若需要进一步查看属性与属性的关系（事件），请使用可视化工作台进一步分析。</li>
+            </ul>
+        </div>
+        #showPolicy($report.policy)
+        <h2 class="title">本次检测详情</h2>
+        #showFeatures($report.features, $image_base64)
+    </div>
+</div>
+</body>
+</html>

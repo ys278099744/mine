@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/jdbc">
+<head>
+    <title>同盾智能风控平台</title>
+    <meta charSet="utf-8" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="/js/common/min.css">
+    <link rel="stylesheet" th:href="@{/krakenWeb/krakenWeb.css}"/>
+    <script type="text/javascript" th:src="@{/dll/vendor1.js}"></script>
+    <script type="text/javascript" th:src="@{/dll/vendor2.js}"></script>
+<link href="/krakenWeb/groupSummeryGraph.css" rel="stylesheet"></head>
+<body>
+<input id="userName" type="hidden" th:value="${userDetails.cnName}">
+<div id="app"></div>
+<script type="text/javascript" src="/krakenWeb/groupSummeryGraph.js"></script>
+</body>
+</html>

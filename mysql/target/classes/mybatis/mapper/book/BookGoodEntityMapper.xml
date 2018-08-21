@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.farmerspace.dal.dao.mapper.book.BookGoodEntityMapper">
+  <resultMap id="BaseResultMap" type="cn.farmerspace.dal.dao.entity.book.BookGoodEntity">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="isbn" jdbcType="VARCHAR" property="isbn" />
+    <result column="price" jdbcType="VARCHAR" property="price" />
+    <result column="storage" jdbcType="INTEGER" property="storage" />
+    <result column="owner_id" jdbcType="BIGINT" property="ownerId" />
+    <result column="img_id" jdbcType="VARCHAR" property="imgId" />
+  </resultMap>
+
+</mapper>

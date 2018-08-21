@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.farmerspace</groupId>
+    <artifactId>mine</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <compiler.version>1.8</compiler.version>
+        <java_source_version>1.8</java_source_version>
+        <java_target_version>1.8</java_target_version>
+        <file_encoding>UTF-8</file_encoding>
+
+
+        <druid-version>1.0.31</druid-version>
+        <slf4j-api-version>1.7.25</slf4j-api-version>
+        <jcl-over-slf4j-version>1.7.25</jcl-over-slf4j-version>
+        <commons-logging-version>1.1.3</commons-logging-version>
+        <logback-version>1.2.2</logback-version>
+        <log4j-version>1.2.17</log4j-version>
+        <guava-version>23.0</guava-version>
+        <fastjson-version>1.2.44</fastjson-version>
+        <mysql-version>5.1.43</mysql-version>
+        <mybatis-version>3.4.5</mybatis-version>
+        <mybatis-spring-version>1.3.1</mybatis-spring-version>
+        <mybatis-springboot-version>1.3.1</mybatis-springboot-version>
+        <mapper-version>3.4.6</mapper-version>
+        <mapper-springboot-version>1.1.7</mapper-springboot-version>
+        <pagehelper-version>4.1.1</pagehelper-version>
+        <velocity-version>1.7</velocity-version>
+        <!--PDF 相关 -->
+        <itextpdf.version>5.5.1</itextpdf.version>
+        <itext.asian.version>5.2.0</itext.asian.version>
+        <flying.saucer.version>9.0.9</flying.saucer.version>
+        <batik.codec.version>1.8</batik.codec.version>
+        <xmlgraphics.commons.version>2.1</xmlgraphics.commons.version>
+        <batic.codec>1.8</batic.codec>
+    </properties>
+
+    <modules>
+        <module>web</module>
+        <module>biz</module>
+        <module>mysql</module>
+        <module>core</module>
+
+        <!--<module>app</module>-->
+    </modules>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.9.RELEASE</version>
+    </parent>
+
+    <!-- Add typical dependencies for a web application -->
+    <dependencyManagement>
+        <dependencies>
+
+            <!--commons-->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.6</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>2.6</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>3.2.2</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-beanutils</groupId>
+                <artifactId>commons-beanutils</artifactId>
+                <version>1.9.3</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.5</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-fileupload</groupId>
+                <artifactId>commons-fileupload</artifactId>
+                <version>1.3.2</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.10</version>
+            </dependency>
+
+            <!--guava-->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava-version}</version>
+            </dependency>
+
+            <!-- fastjson -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson-version}</version>
+            </dependency>
+
+            <!-- druid -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid-version}</version>
+            </dependency>
+
+            <!-- mysql -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-version}</version>
+            </dependency>
+
+            <!-- mybatis -->
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis-spring</artifactId>
+                <version>${mybatis-spring-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis-springboot-version}</version>
+            </dependency>
+
+            <!-- mybatis-mapper -->
+            <dependency>
+                <groupId>tk.mybatis</groupId>
+                <artifactId>mapper</artifactId>
+                <version>${mapper-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>tk.mybatis</groupId>
+                <artifactId>mapper-spring-boot-starter</artifactId>
+                <version>${mapper-springboot-version}</version>
+            </dependency>
+
+            <!-- pagehelper -->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper</artifactId>
+                <version>${pagehelper-version}</version>
+            </dependency>
+
+
+            <!--poi-->
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>3.16</version>
+            </dependency>
+
+            <!--cvs-->
+            <dependency>
+                <groupId>com.opencsv</groupId>
+                <artifactId>opencsv</artifactId>
+                <version>3.9</version>
+            </dependency>
+
+            <!--velocity-->
+            <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity</artifactId>
+                <version>${velocity-version}</version>
+            </dependency>
+            <!-- ================================================= -->
+            <!-- 日志及相关依赖（用slf4j+logback代替jcl+log4j） -->
+            <!-- ================================================= -->
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j-api-version}</version>
+            </dependency>
+            <!-- 将现有的jakarta commons logging的调用转换成lsf4j的调用。 -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>jcl-over-slf4j</artifactId>
+                <version>${jcl-over-slf4j-version}</version>
+            </dependency>
+            <!-- Hack：确保commons-logging的jar包不被引入，否则将和jcl-over-slf4j冲突 -->
+            <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>${commons-logging-version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- slf4j的实现：logback，用来取代log4j。更快、更强！ -->
+
+            <!-- Mybatis Generator -->
+            <dependency>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-core</artifactId>
+                <version>1.3.2</version>
+                <scope>provided</scope>
+                <optional>true</optional>
+            </dependency>
+
+            <!--servlet-->
+
+
+        </dependencies>
+    </dependencyManagement>
+
+
+
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
