@@ -7,105 +7,207 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ed85636-bfe2-4dd8-a193-d1bf6d513ee2" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/biz/pom.xml" afterPath="$PROJECT_DIR$/biz/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/biz/src/main/java/cn/farmerspace/biz/service/book/BookGoodEntityService.java" afterPath="$PROJECT_DIR$/biz/src/main/java/cn/farmerspace/biz/service/book/BookGoodEntityService.java" />
-      <change beforePath="$PROJECT_DIR$/biz/target/classes/cn/tongdun/kraken/biz/BusException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/biz/target/classes/cn/tongdun/kraken/biz/SystemException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/biz/target/classes/cn/tongdun/kraken/biz/service/authority/SysUserEntityService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/biz/target/classes/cn/tongdun/kraken/biz/service/book/BookGoodEntityService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/biz/target/classes/cn/tongdun/kraken/biz/service/user/UserEntityService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/tongdun/kraken/core/convert/AbstractConvert.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/tongdun/kraken/core/convert/Convert.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/tongdun/kraken/core/convert/VOConvert.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/tongdun/kraken/core/result/EnumStatus.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/tongdun/kraken/core/result/Response.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/tongdun/kraken/core/result/StatusCode.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/tongdun/kraken/core/support/SupportConfig.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/tongdun/kraken/core/tkmybatis/BaseEntity.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/tongdun/kraken/core/tkmybatis/BaseMapper.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/tongdun/kraken/core/tkmybatis/BaseService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/tongdun/kraken/core/tkmybatis/BaseServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/tongdun/kraken/core/tkmybatis/Page.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/tongdun/kraken/core/util/DateUtil.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/tongdun/kraken/core/util/Md5Util.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/tongdun/kraken/core/util/RequestUtils.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/tongdun/kraken/core/util/UuidUtil.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/tongdun/kraken/core/util/spring/ContextHolderUtils.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/tongdun/kraken/core/util/spring/PropertiesUtil.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/tongdun/kraken/core/util/spring/SpringContextUtil.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mysql/src/main/java/cn/farmerspace/dal/support/MybatisConfig.java" afterPath="$PROJECT_DIR$/mysql/src/main/java/cn/farmerspace/dal/support/MybatisConfig.java" />
-      <change beforePath="$PROJECT_DIR$/mysql/src/main/resources/generator/generatorConfig.properties" afterPath="$PROJECT_DIR$/mysql/src/main/resources/generator/generatorConfig.properties" />
-      <change beforePath="$PROJECT_DIR$/mysql/target/classes/cn/farmerspace/dal/dao/entity/authority/SysUserEntity.class" afterPath="$PROJECT_DIR$/mysql/target/classes/cn/farmerspace/dal/dao/entity/authority/SysUserEntity.class" />
-      <change beforePath="$PROJECT_DIR$/mysql/target/classes/cn/farmerspace/dal/dao/mapper/authority/SysUserEntityMapper.class" afterPath="$PROJECT_DIR$/mysql/target/classes/cn/farmerspace/dal/dao/mapper/authority/SysUserEntityMapper.class" />
-      <change beforePath="$PROJECT_DIR$/mysql/target/classes/cn/farmerspace/dal/dao/mapper/book/BookGoodEntityMapper.class" afterPath="$PROJECT_DIR$/mysql/target/classes/cn/farmerspace/dal/dao/mapper/book/BookGoodEntityMapper.class" />
-      <change beforePath="$PROJECT_DIR$/mysql/target/classes/cn/farmerspace/dal/dao/mapper/book/UserEntityMapper.class" afterPath="$PROJECT_DIR$/mysql/target/classes/cn/farmerspace/dal/dao/mapper/book/UserEntityMapper.class" />
-      <change beforePath="$PROJECT_DIR$/mysql/target/classes/cn/farmerspace/dal/support/MybatisConfig.class" afterPath="$PROJECT_DIR$/mysql/target/classes/cn/farmerspace/dal/support/MybatisConfig.class" />
-      <change beforePath="$PROJECT_DIR$/mysql/target/classes/generator/generatorConfig.properties" afterPath="$PROJECT_DIR$/mysql/target/classes/generator/generatorConfig.properties" />
-      <change beforePath="$PROJECT_DIR$/web/pom.xml" afterPath="$PROJECT_DIR$/web/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/cn/tongdun/kraken/AppMain.java" afterPath="$PROJECT_DIR$/web/src/main/java/cn/farmerspace/AppMain.java" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/cn/tongdun/kraken/web/controller/GlobalExceptionHandler.java" afterPath="$PROJECT_DIR$/web/src/main/java/cn/farmerspace/web/controller/GlobalExceptionHandler.java" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/cn/tongdun/kraken/web/controller/RouteController.java" afterPath="$PROJECT_DIR$/web/src/main/java/cn/farmerspace/web/controller/RouteController.java" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/cn/tongdun/kraken/web/controller/book/RecommendController.java" afterPath="$PROJECT_DIR$/web/src/main/java/cn/farmerspace/web/controller/book/RecommendController.java" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/cn/tongdun/kraken/web/controller/book/UpBookController.java" afterPath="$PROJECT_DIR$/web/src/main/java/cn/farmerspace/web/controller/book/UpBookController.java" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/cn/tongdun/kraken/web/controller/commom/BaseController.java" afterPath="$PROJECT_DIR$/web/src/main/java/cn/farmerspace/web/controller/commom/BaseController.java" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/cn/tongdun/kraken/web/controller/user/UserController.java" afterPath="$PROJECT_DIR$/web/src/main/java/cn/farmerspace/web/controller/user/UserController.java" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/cn/tongdun/kraken/web/reqParam/UserCustomPara.java" afterPath="$PROJECT_DIR$/web/src/main/java/cn/farmerspace/web/reqParam/UserCustomPara.java" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/cn/tongdun/kraken/web/support/SecurityConfig.java" afterPath="$PROJECT_DIR$/web/src/main/java/cn/farmerspace/web/support/SecurityConfig.java" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/cn/tongdun/kraken/web/support/WebConfig.java" afterPath="$PROJECT_DIR$/web/src/main/java/cn/farmerspace/web/support/WebConfig.java" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/cn/tongdun/kraken/web/support/security/AuthProvider.java" afterPath="$PROJECT_DIR$/web/src/main/java/cn/farmerspace/web/support/security/AuthProvider.java" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/cn/tongdun/kraken/web/support/security/CustomLoginUrlAuthenticationEntryPoint.java" afterPath="$PROJECT_DIR$/web/src/main/java/cn/farmerspace/web/support/security/CustomLoginUrlAuthenticationEntryPoint.java" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/cn/tongdun/kraken/web/support/security/LdapUserDetailsService.java" afterPath="$PROJECT_DIR$/web/src/main/java/cn/farmerspace/web/support/security/LdapUserDetailsService.java" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/cn/tongdun/kraken/web/support/security/LoginUserDetails.java" afterPath="$PROJECT_DIR$/web/src/main/java/cn/farmerspace/web/support/security/LoginUserDetails.java" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/cn/tongdun/kraken/web/support/security/SessionAuthenticationSuccessHandler.java" afterPath="$PROJECT_DIR$/web/src/main/java/cn/farmerspace/web/support/security/SessionAuthenticationSuccessHandler.java" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/cn/tongdun/kraken/web/support/security/UserNameAuthenticationFailureHandler.java" afterPath="$PROJECT_DIR$/web/src/main/java/cn/farmerspace/web/support/security/UserNameAuthenticationFailureHandler.java" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/cn/tongdun/kraken/web/util/AuthUtil.java" afterPath="$PROJECT_DIR$/web/src/main/java/cn/farmerspace/web/util/AuthUtil.java" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/cn/tongdun/kraken/web/util/CommentUtil.java" afterPath="$PROJECT_DIR$/web/src/main/java/cn/farmerspace/web/util/CommentUtil.java" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/web/src/main/resources/application.properties" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/logback-spring.xml" afterPath="$PROJECT_DIR$/web/src/main/resources/logback-spring.xml" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/application.properties" afterPath="$PROJECT_DIR$/web/target/classes/application.properties" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/tongdun/kraken/AppMain.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/tongdun/kraken/web/controller/GlobalExceptionHandler.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/tongdun/kraken/web/controller/RouteController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/tongdun/kraken/web/controller/book/RecommendController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/tongdun/kraken/web/controller/book/UpBookController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/tongdun/kraken/web/controller/commom/BaseController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/tongdun/kraken/web/controller/user/UserController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/tongdun/kraken/web/reqParam/UserCustomPara.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/tongdun/kraken/web/support/SecurityConfig.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/tongdun/kraken/web/support/WebConfig.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/tongdun/kraken/web/support/security/AuthProvider.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/tongdun/kraken/web/support/security/CustomLoginUrlAuthenticationEntryPoint.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/tongdun/kraken/web/support/security/LdapUserDetailsService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/tongdun/kraken/web/support/security/LoginUserDetails.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/tongdun/kraken/web/support/security/SessionAuthenticationSuccessHandler.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/tongdun/kraken/web/support/security/UserNameAuthenticationFailureHandler.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/tongdun/kraken/web/util/AuthUtil.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/tongdun/kraken/web/util/CommentUtil.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/logback-spring.xml" afterPath="$PROJECT_DIR$/web/target/classes/logback-spring.xml" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/application.properties" afterPath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/application.properties" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/tongdun/kraken/AppMain.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/tongdun/kraken/web/controller/GlobalExceptionHandler.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/tongdun/kraken/web/controller/RouteController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/tongdun/kraken/web/controller/book/RecommendController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/tongdun/kraken/web/controller/book/UpBookController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/tongdun/kraken/web/controller/commom/BaseController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/tongdun/kraken/web/controller/user/UserController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/tongdun/kraken/web/reqParam/UserCustomPara.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/tongdun/kraken/web/support/SecurityConfig.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/tongdun/kraken/web/support/WebConfig.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/tongdun/kraken/web/support/security/AuthProvider.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/tongdun/kraken/web/support/security/CustomLoginUrlAuthenticationEntryPoint.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/tongdun/kraken/web/support/security/LdapUserDetailsService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/tongdun/kraken/web/support/security/LoginUserDetails.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/tongdun/kraken/web/support/security/SessionAuthenticationSuccessHandler.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/tongdun/kraken/web/support/security/UserNameAuthenticationFailureHandler.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/tongdun/kraken/web/util/AuthUtil.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/tongdun/kraken/web/util/CommentUtil.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/logback-spring.xml" afterPath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/logback-spring.xml" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/mine-biz-1.0.0.jar" afterPath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/mine-biz-1.0.0.jar" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/mine-core-1.0.0.jar" afterPath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/mine-core-1.0.0.jar" />
-      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/mine-mysql-1.0.0.jar" afterPath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/mine-mysql-1.0.0.jar" />
+      <change beforePath="$PROJECT_DIR$/biz/target/classes/cn/farmerspace/biz/BusException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/biz/target/classes/cn/farmerspace/biz/SystemException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/biz/target/classes/cn/farmerspace/biz/service/authority/SysUserEntityService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/biz/target/classes/cn/farmerspace/biz/service/book/BookGoodEntityService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/biz/target/classes/cn/farmerspace/biz/service/user/UserEntityService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/biz/target/kraken-biz-1.0.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/biz/target/maven-archiver/pom.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/biz/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/biz/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/biz/target/mine-biz-1.0.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/farmerspace/core/convert/AbstractConvert.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/farmerspace/core/convert/Convert.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/farmerspace/core/convert/VOConvert.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/farmerspace/core/result/EnumStatus.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/farmerspace/core/result/Response.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/farmerspace/core/result/StatusCode.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/farmerspace/core/support/SupportConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/farmerspace/core/tkmybatis/BaseEntity.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/farmerspace/core/tkmybatis/BaseMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/farmerspace/core/tkmybatis/BaseService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/farmerspace/core/tkmybatis/BaseServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/farmerspace/core/tkmybatis/Page.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/farmerspace/core/util/DateUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/farmerspace/core/util/Md5Util.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/farmerspace/core/util/RequestUtils.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/farmerspace/core/util/UuidUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/farmerspace/core/util/spring/ContextHolderUtils.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/farmerspace/core/util/spring/PropertiesUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cn/farmerspace/core/util/spring/SpringContextUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/kraken-core-1.0.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/maven-archiver/pom.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/core/target/mine-core-1.0.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mysql/target/classes/cn/farmerspace/dal/dao/entity/authority/SysUserEntity.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mysql/target/classes/cn/farmerspace/dal/dao/entity/book/BookGoodEntity.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mysql/target/classes/cn/farmerspace/dal/dao/entity/book/UserEntity.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mysql/target/classes/cn/farmerspace/dal/dao/mapper/authority/SysUserEntityMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mysql/target/classes/cn/farmerspace/dal/dao/mapper/book/BookGoodEntityMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mysql/target/classes/cn/farmerspace/dal/dao/mapper/book/UserEntityMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mysql/target/classes/cn/farmerspace/dal/support/DataSourceConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mysql/target/classes/cn/farmerspace/dal/support/MybatisConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mysql/target/classes/generator/generatorConfig.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mysql/target/classes/generator/generatorConfig.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mysql/target/classes/mybatis/mapper/authority/SysUserEntityMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mysql/target/classes/mybatis/mapper/book/BookGoodEntityMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mysql/target/classes/mybatis/mapper/book/UserEntityMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mysql/target/classes/mybatis/mybatis-config.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mysql/target/kraken-mysql-1.0.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mysql/target/maven-archiver/pom.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mysql/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mysql/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mysql/target/mine-mysql-1.0.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/application-dev.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/application-prod.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/application-test.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/application.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/banner.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/farmerspace/AppMain.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/farmerspace/web/controller/GlobalExceptionHandler.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/farmerspace/web/controller/RouteController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/farmerspace/web/controller/book/RecommendController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/farmerspace/web/controller/book/UpBookController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/farmerspace/web/controller/commom/BaseController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/farmerspace/web/controller/user/UserController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/farmerspace/web/reqParam/UserCustomPara.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/farmerspace/web/support/SecurityConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/farmerspace/web/support/WebConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/farmerspace/web/support/security/AuthProvider.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/farmerspace/web/support/security/CustomLoginUrlAuthenticationEntryPoint.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/farmerspace/web/support/security/LdapUserDetailsService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/farmerspace/web/support/security/LoginUserDetails.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/farmerspace/web/support/security/SessionAuthenticationSuccessHandler.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/farmerspace/web/support/security/UserNameAuthenticationFailureHandler.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/farmerspace/web/util/AuthUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/cn/farmerspace/web/util/CommentUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/logback-spring.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/pdf/demo/demo.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/pdf/demo/msyh.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/pdf/demo/pdf_report_cloud_template.vm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/pdf/demo/pdf_report_enterprise_template.vm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/pdf/templates/exportpdf/msyh.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/pdf/templates/exportpdf/pdf_report_enterprise_template.vm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/graph.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/login.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/ok.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/templates/userCustomDetail.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/META-INF/MANIFEST.MF" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/application-dev.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/application-prod.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/application-test.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/application.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/banner.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/farmerspace/AppMain.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/farmerspace/web/controller/GlobalExceptionHandler.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/farmerspace/web/controller/RouteController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/farmerspace/web/controller/book/RecommendController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/farmerspace/web/controller/book/UpBookController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/farmerspace/web/controller/commom/BaseController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/farmerspace/web/controller/user/UserController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/farmerspace/web/reqParam/UserCustomPara.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/farmerspace/web/support/SecurityConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/farmerspace/web/support/WebConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/farmerspace/web/support/security/AuthProvider.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/farmerspace/web/support/security/CustomLoginUrlAuthenticationEntryPoint.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/farmerspace/web/support/security/LdapUserDetailsService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/farmerspace/web/support/security/LoginUserDetails.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/farmerspace/web/support/security/SessionAuthenticationSuccessHandler.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/farmerspace/web/support/security/UserNameAuthenticationFailureHandler.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/farmerspace/web/util/AuthUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/cn/farmerspace/web/util/CommentUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/logback-spring.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/pdf/demo/demo.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/pdf/demo/msyh.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/pdf/demo/pdf_report_cloud_template.vm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/pdf/demo/pdf_report_enterprise_template.vm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/pdf/templates/exportpdf/msyh.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/pdf/templates/exportpdf/pdf_report_enterprise_template.vm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/templates/graph.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/templates/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/templates/login.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/templates/ok.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/classes/templates/userCustomDetail.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/animal-sniffer-annotations-1.14.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/attoparser-2.0.1.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/classmate-1.3.4.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/commons-beanutils-1.9.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/commons-codec-1.10.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/commons-collections-3.2.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/commons-fileupload-1.3.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/commons-io-2.5.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/commons-lang-2.6.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/commons-lang3-3.6.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/druid-1.0.31.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/error_prone_annotations-2.0.18.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/fastjson-1.2.44.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/google-collections-1.0-rc2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/groovy-2.4.13.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/guava-23.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/hibernate-validator-5.3.6.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/j2objc-annotations-1.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/jackson-annotations-2.8.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/jackson-core-2.8.10.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/jackson-databind-2.8.10.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/jboss-logging-3.3.1.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/jcl-over-slf4j-1.7.25.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/jsqlparser-0.9.4.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/jsr305-1.3.9.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/jul-to-slf4j-1.7.25.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/log4j-over-slf4j-1.7.25.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/logback-classic-1.1.11.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/logback-core-1.1.11.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/mapper-3.4.6.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/mapper-spring-boot-autoconfigure-1.1.7.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/mapper-spring-boot-starter-1.1.7.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/mine-biz-1.0.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/mine-core-1.0.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/mine-mysql-1.0.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/mybatis-3.4.5.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/mybatis-spring-1.3.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/mybatis-spring-boot-autoconfigure-1.3.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/mybatis-spring-boot-starter-1.3.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/mysql-connector-java-5.1.43.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/pagehelper-4.1.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/persistence-api-1.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/slf4j-api-1.7.25.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/snakeyaml-1.17.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/spring-aop-4.3.13.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/spring-beans-4.3.13.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/spring-boot-1.5.9.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/spring-boot-autoconfigure-1.5.9.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/spring-boot-starter-1.5.9.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/spring-boot-starter-jdbc-1.5.9.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/spring-boot-starter-logging-1.5.9.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/spring-boot-starter-thymeleaf-1.5.9.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/spring-boot-starter-web-1.5.9.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/spring-context-4.3.13.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/spring-context-support-4.3.13.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/spring-core-4.3.13.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/spring-expression-4.3.13.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/spring-jdbc-4.3.13.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/spring-security-config-4.2.3.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/spring-security-core-4.2.3.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/spring-security-web-4.2.3.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/spring-tx-4.3.13.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/spring-web-4.3.13.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/spring-webmvc-4.3.13.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/thymeleaf-3.0.2.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/thymeleaf-expression-processor-1.1.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/thymeleaf-extras-springsecurity4-3.0.2.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/thymeleaf-layout-dialect-2.2.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/thymeleaf-spring4-3.0.2.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/tomcat-jdbc-8.5.23.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/tomcat-juli-8.5.23.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/unbescape-1.1.4.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/mine-web-1.0.0/WEB-INF/lib/validation-api-1.1.0.Final.jar" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/web/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -133,14 +235,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BookGoodEntityService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BookGoodEntityService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/biz/src/main/java/cn/farmerspace/biz/service/book/BookGoodEntityService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
+            <state relative-caret-position="285">
               <caret line="19" column="73" lean-forward="false" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -211,7 +323,7 @@
         <entry file="file://$PROJECT_DIR$/web/src/main/java/cn/farmerspace/web/controller/book/RecommendController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="23">
-              <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+              <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -222,16 +334,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="197">
               <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/cn/farmerspace/core/tkmybatis/BaseMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -615,6 +717,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="Book&#9;FILE&#9;file:///Users/yeshuai/ownProject/mine/biz/src/main/java/cn/farmerspace/biz/service/book/BookGoodEntityService.java" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -847,16 +954,15 @@
       <workItem from="1534830714117" duration="792000" />
       <workItem from="1534831578357" duration="55000" />
       <workItem from="1534831647658" duration="1102000" />
-      <workItem from="1535436782976" duration="2136000" />
+      <workItem from="1535436782976" duration="3576000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4085000" />
+    <option name="totallyTimeSpent" value="5525000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="817" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -870,7 +976,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39917126" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39917126" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872927" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -880,7 +986,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32872927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25679544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1088,7 +1194,7 @@
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1178,18 +1284,26 @@
     <entry file="file://$PROJECT_DIR$/web/src/main/java/cn/farmerspace/web/controller/book/RecommendController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
-          <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+          <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/biz/src/main/java/cn/farmerspace/biz/service/book/BookGoodEntityService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
+        <state relative-caret-position="285">
           <caret line="19" column="73" lean-forward="false" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>

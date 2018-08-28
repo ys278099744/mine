@@ -1,8 +1,0 @@
-/Users/yeshuai/ownProject/web/mine/mysql/src/main/java/cn/tongdun/kraken/dal/dao/entity/authority/SysUserEntity.java
-/Users/yeshuai/ownProject/web/mine/mysql/src/main/java/cn/tongdun/kraken/dal/dao/mapper/authority/SysUserEntityMapper.java
-/Users/yeshuai/ownProject/web/mine/mysql/src/main/java/cn/tongdun/kraken/dal/dao/entity/book/UserEntity.java
-/Users/yeshuai/ownProject/web/mine/mysql/src/main/java/cn/tongdun/kraken/dal/dao/mapper/book/UserEntityMapper.java
-/Users/yeshuai/ownProject/web/mine/mysql/src/main/java/cn/tongdun/kraken/dal/dao/mapper/book/BookGoodEntityMapper.java
-/Users/yeshuai/ownProject/web/mine/mysql/src/main/java/cn/tongdun/kraken/dal/support/MybatisConfig.java
-/Users/yeshuai/ownProject/web/mine/mysql/src/main/java/cn/tongdun/kraken/dal/dao/entity/book/BookGoodEntity.java
-/Users/yeshuai/ownProject/web/mine/mysql/src/main/java/cn/tongdun/kraken/dal/support/DataSourceConfig.java
