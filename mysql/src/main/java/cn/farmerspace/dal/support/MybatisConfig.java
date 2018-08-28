@@ -1,5 +1,6 @@
 package cn.farmerspace.dal.support;
 
+
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
@@ -63,12 +64,6 @@ public class MybatisConfig {
     @Bean("sqlSessionTemplate")
     public SqlSessionTemplate sqlSessionTemplate(@Qualifier("sqlSessionFactory")SqlSessionFactory sqlSessionFactory) throws Exception{
         //TODO
-//        ExecutorType executorType = this.properties.getExecutorType();
-//        if (executorType != null) {
-//            return new SqlSessionTemplate(sqlSessionFactory, executorType);
-//        } else {
-//            return new SqlSessionTemplate(sqlSessionFactory);
-//        }
         SqlSessionTemplate sqlSessionTemplate= new SqlSessionTemplate(sqlSessionFactory);
         return sqlSessionTemplate;
     }
@@ -83,12 +78,5 @@ public class MybatisConfig {
         return new DataSourceTransactionManager(dataSource);
     }
 
-
-//    public static void main(String[] args) throws Exception{
-//        PathMatchingResourcePatternResolver pathMatchingResourcePatternResolver = new PathMatchingResourcePatternResolver();
-//        String packageSearchPath = ResourcePatternResolver.CLASSPATH_ALL_URL_PREFIX + MAPPER_PATH;
-//        Resource[] r = pathMatchingResourcePatternResolver.getResources(packageSearchPath);
-//        System.out.println(r);
-//    }
 
 }
